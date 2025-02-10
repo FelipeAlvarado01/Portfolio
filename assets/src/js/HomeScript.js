@@ -12,6 +12,12 @@ rangeInput.addEventListener("input", function () {
   const contactMe = document.querySelector("#contact-me");
   const ths = document.querySelectorAll("th");
   const mainTitles = document.querySelectorAll("#main-titles");
+  const menu = document.querySelector("#menu-content");
+
+  menu.style.backgroundColor = interpolateColor(
+    { r: 33, g: 50, b: 146 },
+    { r: 0, g: 0, b: 0 }
+  );
 
   threeContainer.style.backgroundColor = interpolateColor(
     { r: 33, g: 50, b: 146 },
@@ -21,7 +27,7 @@ rangeInput.addEventListener("input", function () {
   threeContainer.style.borderBottomStyle = "solid";
   threeContainer.style.borderBottomColor = interpolateColor(
     { r: 0, g: 0, b: 0 },
-    { r: 235, g: 106, b: 32 }
+    { r: 51, g: 67, b: 158 }
   );
 
   document.querySelector("main").style.backgroundColor = interpolateColor(
@@ -33,31 +39,31 @@ rangeInput.addEventListener("input", function () {
   myDescription.style.borderBottomStyle = "solid";
   myDescription.style.borderBottomColor = interpolateColor(
     { r: 0, g: 0, b: 0 },
-    { r: 235, g: 106, b: 32 }
+    { r: 51, g: 67, b: 158 }
   );
 
   myWorks.style.borderBottomWidth = "2px";
   myWorks.style.borderBottomStyle = "solid";
   myWorks.style.borderBottomColor = interpolateColor(
     { r: 0, g: 0, b: 0 },
-    { r: 235, g: 106, b: 32 }
+    { r: 51, g: 67, b: 158 }
   );
 
   contactMe.style.borderBottomWidth = "2px";
   contactMe.style.borderBottomStyle = "solid";
   contactMe.style.borderBottomColor = interpolateColor(
     { r: 0, g: 0, b: 0 },
-    { r: 235, g: 106, b: 32 }
+    { r: 51, g: 67, b: 158 }
   );
 
   document.querySelector("#slider-change").style.backgroundColor =
-    interpolateColor({ r: 245, g: 130, b: 65 }, { r: 153, g: 191, b: 242 });
+    interpolateColor({ r: 245, g: 130, b: 65 }, { r: 51, g: 67, b: 158 });
   document.querySelector("#menu-burguer img").style.backgroundColor =
-    interpolateColor({ r: 32, g: 46, b: 128 }, { r: 236, g: 106, b: 32 });
+    interpolateColor({ r: 32, g: 46, b: 128 }, { r: 51, g: 67, b: 158 });
   document.querySelector("#down-button img").style.backgroundColor =
-    interpolateColor({ r: 32, g: 46, b: 128 }, { r: 236, g: 106, b: 32 });
+    interpolateColor({ r: 32, g: 46, b: 128 }, { r: 51, g: 67, b: 158 });
   document.querySelector("#form-section").style.backgroundColor =
-    interpolateColor({ r: 33, g: 50, b: 146 }, { r: 236, g: 106, b: 32 });
+    interpolateColor({ r: 33, g: 50, b: 146 }, { r: 51, g: 67, b: 158 });
   document.querySelector("#request-text").style.color = interpolateColor(
     { r: 0, g: 0, b: 0 },
     { r: 255, g: 255, b: 255 }
@@ -65,25 +71,25 @@ rangeInput.addEventListener("input", function () {
   document.querySelector("#my-socials").style.backgroundColor =
     interpolateColor({ r: 16, g: 26, b: 83 }, { r: 0, g: 0, b: 0 });
   document.querySelector("#my-socials hr").style.backgroundColor =
-    interpolateColor({ r: 0, g: 0, b: 0 }, { r: 236, g: 106, b: 32 });
+    interpolateColor({ r: 0, g: 0, b: 0 }, { r: 51, g: 67, b: 158 });
 
   ths.forEach((th) => {
     th.style.backgroundColor = interpolateColor(
       { r: 33, g: 50, b: 146 },
-      { r: 236, g: 106, b: 32 }
+      { r: 51, g: 67, b: 158 }
     );
   });
 
   mainTitles.forEach((title) => {
     title.style.color = interpolateColor(
       { r: 0, g: 0, b: 0 },
-      { r: 255, g: 255, b: 255 }
+      { r: 51, g: 67, b: 158 }
     );
   });
   cardsColor.forEach((card) => {
     card.style.backgroundColor = interpolateColor(
       { r: 33, g: 50, b: 146 },
-      { r: 236, g: 106, b: 32 }
+      { r: 51, g: 67, b: 158 }
     );
   });
 });

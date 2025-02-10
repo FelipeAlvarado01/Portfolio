@@ -129,19 +129,34 @@ body .three-container .main-menu .menu-content ul li a {
   padding: 10px 0;
   text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
 }
-body .three-container .main-menu .menu-content ul li:hover {
-  background-color: rgba(242, 242, 240, 0.2);
-  cursor: pointer;
+body .three-container .main-menu .menu-content ul .menu-option:hover {
+  background-color: rgb(45, 40, 187);
+}
+body .three-container .main-menu .menu-content .icon-section {
+  width: 100%;
 }
 body .three-container .main-menu .menu-content .icon-section ul {
   display: flex;
-  gap: 50px;
+  flex-direction: row;
+  justify-content: center; /* Centra los <li> horizontalmente */
+  align-items: center; /* Centra los <li> verticalmente */
+  gap: 10px; /* Espaciado opcional entre los elementos */
+  padding: 0;
 }
-body .three-container .main-menu .menu-content .icon-section ul li,
-body .three-container .main-menu .menu-content .icon-section ul a,
-body .three-container .main-menu .menu-content .icon-section ul img {
+body .three-container .main-menu .menu-content .icon-section ul li {
+  display: flex; /* Para centrar el contenido del li */
   justify-content: center;
-  width: 50px;
+  align-items: center;
+}
+body .three-container .main-menu .menu-content .icon-section ul li a img {
+  padding: 20px;
+  background-color: rgb(51, 67, 158);
+  width: 90px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+body .three-container .main-menu .menu-content .icon-section ul li a img:hover {
+  background-color: rgb(45, 40, 187);
 }
 body .three-container .main-menu .switch-changes_color {
   z-index: 3;
@@ -156,24 +171,30 @@ body .three-container .main-menu .switch-changes_color span .moon-img {
 }
 body .three-container .main-menu .switch-changes_color .slider-change {
   -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   width: 50px;
   height: 20px;
   border-radius: 25px;
   background: rgb(242, 130, 65);
   outline: none;
   border: 2px solid black;
+  transition: transform 5s ease-in-out;
 }
 body .three-container .main-menu .switch-changes_color .slider-change:hover {
   background: rgb(236, 150, 101);
 }
 body .three-container .main-menu .switch-changes_color .slider-change::-webkit-slider-thumb {
   -webkit-appearance: none;
+  appearance: none;
   width: 25px;
   height: 25px;
   border-radius: 100%;
   background: #f2f2f0;
   border: 2px solid black;
   cursor: pointer;
+  -webkit-transition: transform 5s ease-in-out;
+  transition: transform 5s ease-in-out;
 }
 body .three-container .main-menu .switch-changes_color .slider-change::-webkit-slider-thumb:hover {
   background: rgb(230, 223, 223);

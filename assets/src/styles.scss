@@ -160,23 +160,37 @@ body {
                 -2px 2px 2px black, 2px 2px 2px black;
             }
           }
-
-          li:hover {
-            background-color: rgb(242, 242, 240, 0.2);
-            cursor: pointer;
+          .menu-option:hover {
+            background-color: rgb(45, 40, 187);
           }
         }
 
         .icon-section {
+          width: 100%;
           ul {
             display: flex;
-            gap: 50px;
+            flex-direction: row;
+            justify-content: center; /* Centra los <li> horizontalmente */
+            align-items: center; /* Centra los <li> verticalmente */
+            gap: 10px; /* Espaciado opcional entre los elementos */
+            padding: 0;
 
-            li,
-            a,
-            img {
+            li {
+              display: flex; /* Para centrar el contenido del li */
               justify-content: center;
-              width: 50px;
+              align-items: center;
+              a {
+                img {
+                  padding: 20px;
+                  background-color: rgb(51, 67, 158);
+                  width: 90px;
+                  border-radius: 5px;
+                  border: 2px solid black;
+                }
+                img:hover {
+                  background-color: rgb(45, 40, 187);
+                }
+              }
             }
           }
         }
@@ -199,12 +213,14 @@ body {
 
         .slider-change {
           -webkit-appearance: none;
+          appearance: none;
           width: 50px;
           height: 20px;
           border-radius: 25px;
           background: rgb(242, 130, 65);
           outline: none;
           border: 2px solid black;
+          transition: transform 5s ease-in-out;
         }
 
         .slider-change:hover {
@@ -213,12 +229,14 @@ body {
 
         .slider-change::-webkit-slider-thumb {
           -webkit-appearance: none;
+          appearance: none;
           width: 25px;
           height: 25px;
           border-radius: 100%;
           background: #f2f2f0;
           border: 2px solid black;
           cursor: pointer;
+          transition: transform 5s ease-in-out;
         }
 
         .slider-change::-webkit-slider-thumb:hover {
