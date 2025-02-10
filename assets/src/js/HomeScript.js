@@ -92,13 +92,13 @@ function interpolateColor(initialColor, finalColor) {
   //Funcion de para cambiar de color progresivamente
   let value = colorValue;
   const r = Math.round(
-    initialColor.r + (finalColor.r - initialColor.r) * (value / 100)
+    initialColor.r + (finalColor.r - initialColor.r) * (value / 1)
   );
   const g = Math.round(
-    initialColor.g + (finalColor.g - initialColor.g) * (value / 100)
+    initialColor.g + (finalColor.g - initialColor.g) * (value / 1)
   );
   const b = Math.round(
-    initialColor.b + (finalColor.b - initialColor.b) * (value / 100)
+    initialColor.b + (finalColor.b - initialColor.b) * (value / 1)
   );
   //console.log("rgb");
   return `rgb(${r}, ${g}, ${b})`;
