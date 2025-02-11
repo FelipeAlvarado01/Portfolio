@@ -277,16 +277,21 @@ body main .my-description .description-container {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  gap: 50px;
 }
 body main .my-description .description-container img {
   width: 35%;
   border-radius: 50%;
   border: 2px solid black;
 }
-body main .my-description .description-container table,
+body main .my-description .description-container table {
+  width: 50%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
 body main .my-description .description-container th,
 body main .my-description .description-container td {
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 0 0 0 1vw;
   width: 50%;
@@ -301,6 +306,18 @@ body main .my-description .description-container th {
   font-family: "Poppins", "Arial Narrow Bold", sans-serif;
   color: white;
   background-color: rgb(33, 50, 146);
+}
+body main .my-description .description-container table tr:first-child th {
+  border-top-left-radius: 10px;
+}
+body main .my-description .description-container table tr:first-child td {
+  border-top-right-radius: 10px;
+}
+body main .my-description .description-container table tr:last-child th {
+  border-bottom-left-radius: 10px;
+}
+body main .my-description .description-container table tr:last-child td {
+  border-bottom-right-radius: 10px;
 }
 body main .my-works {
   display: flex;
@@ -652,16 +669,19 @@ body footer .rights-text {
     padding: 1rem;
   }
   html main .my-description .description-container table,
+  body main .my-description .description-container table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
   html main .my-description .description-container th,
   html main .my-description .description-container td,
-  body main .my-description .description-container table,
   body main .my-description .description-container th,
   body main .my-description .description-container td {
-    font-family: "Poppins", "Arial Narrow Bold", sans-serif;
     font-size: 1rem;
     padding: 1rem;
-    margin: 1vh 0;
-    width: 30%;
+    margin: 0 0 0 1vw;
+    width: 50%;
     border: 2px solid black;
     border-collapse: collapse;
   }
